@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function showHint() {
+    teamNum = document.getElementById("TeamNumber").value;
+    scoringPer=document.getElementById("ScoringPeriod").value;
+    console.log(scoringPer);
+
+    if (teamNum.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint2.php?q=" + teamNum + "&r=" + scoringPer, true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+<body>
+
+<p><b>Start typing a name in the input field below:</b></p>
+<form  action="getHint2.php" method="GET">
+Team Number: <input type="text" id="TeamNumber" value="2" onkeyup="showHint()" >
+Scoring Period: <input type="text" id="ScoringPeriod" value="11" onkeyup="showHint()">
+</form>
+<p>Suggestions: <span id="txtHint"></span></p>
+</body>
+</html>

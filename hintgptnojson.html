@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACup Fantasy Hockey Scoring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <div>
+        <h1> ACup Fantasy Hockey Scoring </h1>
+        <label for="mgrName">Manager Number</label>
+        <input type="text" id="mgrName" list="managersList" onkeyup="fetchPlayerData()">
+            <datalist id="managersList">
+                <option value="2"><option value="6"><option value="9"><option value="10">
+                <option value="11"><option value="12"><option value="13"><option value="15">
+                <option value="31"><option value="32"><option value="34"><option value="35">
+                <option value="36"><option value="40"><option value="41"><option value="42">
+                <option value="43"><option value="44">
+
+            </datalist>
+        </input>
+        <!--2,6,9,10,11,12,13,15,31,32,34,35,36,40,41,42,43,44-->
+        <label for="scoringPeriod">Scoring Period</label>
+        <input type="text" id="scoringPeriod" onkeyup="fetchPlayerData()"/>
+        <button type="button" onclick="decrementValue('scoringPeriod')"><</button>
+        <button type="button" onclick="incrementValue('scoringPeriod')">></button>
+        <label for="endScoringPeriod">End Scoring Period</label>
+        <input type="text" id="endScoringPeriod" onkeyup="fetchPlayerData()"/>
+        <button type="button" onclick="decrementValue('endScoringPeriod')"><</button>
+        <button type="button" onclick="incrementValue('endScoringPeriod')">></button>
+        
+        <!-- <button onclick="fetchPlayerData()">Fetch Player Data</button> -->
+        
+        <h2></h2>
+        <table id="playerTable">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Scoring Period</th>
+                    <th>G</th>
+                    <th>A</th>
+                    <th>pim</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody id="playerData"></tbody>
+        </table>
+    </div>
+
+    <script>
+        function fetchPlayerData() {
+            // Get player name and scoring period from user input
+            const playerName = document.getElementById('mgrName').value;
+            const scoringPeriod = document.getElementById('scoringPeriod').value;
+            const endScoringPeriod = document.getElementById('endScoringPeriod').value;
+
+            // Use JavaScript to fetch data from PHP with HTTP POST
+            fetch('hintgptnojson.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `playerName=${playerName}&scoringPeriod=${scoringPeriod}&endScoringPeriod=${endScoringPeriod}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Populate table with data
+                populateTable(data);
+            });
+        }
+
+        function populateTable(data) {
+            // Get the table body element
+            const tableBody = document.getElementById('playerData');
+
+            // Clear existing rows
+            tableBody.innerHTML = '';
+
+            // Populate the table with data
+            data.forEach(row => {
+                let totalPoints = '';//allows totalPoints to be seen outside if-else block
+
+                if(Number.isNaN(parseInt(row.goals))) {
+                    totalPoints = '-';
+                    //console.info('x is NaN.', totalPoints); //debug message for NaN's      
+                }
+                else if (row.pos == "D"  || row.pos == "F") {
+                    totalPoints = parseInt(row.goals) + parseInt(row.assists) + .1 * parseInt(row.pim);
+                }
+                else {
+                    totalPoints = 2 * parseInt(row.wins) + 1.5 * parseInt(row.shutouts) + 1 * parseInt(row.otl);
+                }
+                // Create a new row
+                const newRow = tableBody.insertRow();
+            
+                // Insert cells with data
+                newRow.insertCell().textContent = row.firstName;
+                newRow.insertCell().textContent = row.lastName;
+                newRow.insertCell().textContent = row.scoringPeriod;
+                newRow.insertCell().textContent = row.goals;
+                newRow.insertCell().textContent = row.assists;
+                newRow.insertCell().textContent = row.pim;
+                newRow.insertCell().textContent = totalPoints;                 
+            }
+            );
+        }
+        
+        
+        function incrementValue(id){
+            var value = parseInt(document.getElementById(id).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById(id).value = value;
+            fetchPlayerData();//refresh table based on new scoring period
+        }
+        
+        function decrementValue(id){
+            var value = parseInt(document.getElementById(id).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value--;
+            document.getElementById(id).value = value;
+            fetchPlayerData();//refresh table based on new scoring period
+        }
+    </script>
+</body>
+</html>

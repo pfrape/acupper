@@ -1,0 +1,178 @@
+[25-Jan-2024 11:39:52 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/pfrape/Sites/localhost/getHint3.php:17
+Stack trace:
+#0 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 17
+[25-Jan-2024 11:44:58 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /Users/pfrape/Sites/localhost/getHint3.php:16
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(16): json_decode(Array)
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 16
+[25-Jan-2024 11:46:14 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 17
+[25-Jan-2024 11:46:14 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 11:46:14 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 48
+[25-Jan-2024 11:46:14 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:48
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(48): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(64): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 48
+[25-Jan-2024 11:53:49 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 11:53:49 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 19
+[25-Jan-2024 11:53:49 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:53:49 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:49
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(49): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(73): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:54:17 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 11:54:17 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 19
+[25-Jan-2024 11:54:17 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:54:17 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:49
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(49): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(73): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:56:16 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 11:56:16 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 19
+[25-Jan-2024 11:56:16 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:56:16 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:49
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(49): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(73): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:59:49 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 11:59:49 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 19
+[25-Jan-2024 11:59:49 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:59:49 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:49
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(49): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(73): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:59:58 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 11:59:58 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 19
+[25-Jan-2024 11:59:58 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 11:59:58 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:49
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(49): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(73): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 12:00:50 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 12:00:50 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 19
+[25-Jan-2024 12:00:50 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 12:00:50 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:49
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(49): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(73): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 12:02:46 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 12:02:46 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 19
+[25-Jan-2024 12:02:46 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 12:02:46 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:49
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(49): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(73): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 49
+[25-Jan-2024 12:04:19 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/pfrape/Sites/localhost/getHint3.php:20
+Stack trace:
+#0 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 20
+[25-Jan-2024 12:19:33 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 20
+[25-Jan-2024 12:19:33 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 21
+[25-Jan-2024 12:19:33 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 51
+[25-Jan-2024 12:19:33 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:51
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(51): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(75): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 51
+[25-Jan-2024 12:20:40 UTC] PHP Warning:  Undefined array key "TeamNumber" in /Users/pfrape/Sites/localhost/getHint3.php on line 20
+[25-Jan-2024 12:20:40 UTC] PHP Warning:  Undefined array key "ScoringPeriod" in /Users/pfrape/Sites/localhost/getHint3.php on line 21
+[25-Jan-2024 12:20:40 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 51
+[25-Jan-2024 12:20:40 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:51
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(51): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(75): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 51
+[25-Jan-2024 12:21:37 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/pfrape/Sites/localhost/getHint3.php:20
+Stack trace:
+#0 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 20
+[25-Jan-2024 12:22:49 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /Users/pfrape/Sites/localhost/getHint3.php:18
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(18): json_decode(Array)
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 12:23:06 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /Users/pfrape/Sites/localhost/getHint3.php:18
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(18): json_decode(Array)
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 12:34:31 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /Users/pfrape/Sites/localhost/getHint3.php:18
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(18): json_decode(Array)
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 12:41:19 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /Users/pfrape/Sites/localhost/getHint3.php:18
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(18): json_decode(Array)
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 18
+[25-Jan-2024 12:46:57 UTC] PHP Warning:  Attempt to read property "TeamNumber" on array in /Users/pfrape/Sites/localhost/getHint3.php on line 21
+[25-Jan-2024 12:46:57 UTC] PHP Warning:  Attempt to read property "ScoringPeriod" on array in /Users/pfrape/Sites/localhost/getHint3.php on line 22
+[25-Jan-2024 12:46:57 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 52
+[25-Jan-2024 12:46:57 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:52
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(52): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(76): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 52
+[25-Jan-2024 12:48:16 UTC] PHP Warning:  Attempt to read property "TeamNumber" on array in /Users/pfrape/Sites/localhost/getHint3.php on line 21
+[25-Jan-2024 12:48:16 UTC] PHP Warning:  Attempt to read property "ScoringPeriod" on array in /Users/pfrape/Sites/localhost/getHint3.php on line 22
+[25-Jan-2024 12:48:16 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 52
+[25-Jan-2024 12:48:16 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:52
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(52): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(76): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 52
+[25-Jan-2024 12:48:16 UTC] PHP Warning:  Attempt to read property "TeamNumber" on array in /Users/pfrape/Sites/localhost/getHint3.php on line 21
+[25-Jan-2024 12:48:16 UTC] PHP Warning:  Attempt to read property "ScoringPeriod" on array in /Users/pfrape/Sites/localhost/getHint3.php on line 22
+[25-Jan-2024 12:48:16 UTC] PHP Warning:  Undefined array key 0 in /Users/pfrape/Sites/localhost/getHint3.php on line 52
+[25-Jan-2024 12:48:16 UTC] PHP Fatal error:  Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in /Users/pfrape/Sites/localhost/getHint3.php:52
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getHint3.php(52): array_keys(NULL)
+#1 /Users/pfrape/Sites/localhost/getHint3.php(76): array_to_table(Array)
+#2 {main}
+  thrown in /Users/pfrape/Sites/localhost/getHint3.php on line 52
+[26-Jan-2024 07:01:59 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, MyDB given in /Users/pfrape/Sites/localhost/getPlayerData.php:45
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getPlayerData.php(45): mysqli_real_escape_string(Object(MyDB), '2')
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/getPlayerData.php on line 45
+[26-Jan-2024 07:03:38 UTC] PHP Warning:  SQLite3::query(): Unable to prepare statement: 1, no such column: scoring_period in /Users/pfrape/Sites/localhost/getPlayerData.php on line 53
+[26-Jan-2024 07:03:38 UTC] PHP Warning:  Attempt to read property "num_rows" on bool in /Users/pfrape/Sites/localhost/getPlayerData.php on line 55
+[26-Jan-2024 07:18:44 UTC] PHP Warning:  Undefined property: SQLite3Result::$num_rows in /Users/pfrape/Sites/localhost/getPlayerData.php on line 55
+[26-Jan-2024 07:20:22 UTC] PHP Warning:  Undefined property: SQLite3Result::$num_rows in /Users/pfrape/Sites/localhost/getPlayerData.php on line 55
+[26-Jan-2024 07:21:33 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, MyDB given in /Users/pfrape/Sites/localhost/getPlayerData.php:45
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/getPlayerData.php(45): mysqli_real_escape_string(Object(MyDB), '2')
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/getPlayerData.php on line 45
+[26-Jan-2024 07:42:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'acup' in /Users/pfrape/Sites/localhost/hintgptnojson.php:20
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/hintgptnojson.php(20): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'acup')
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/hintgptnojson.php on line 20
+[26-Jan-2024 07:44:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database '/users/pfrape/desktop/frape/scraper/acup.db' in /Users/pfrape/Sites/localhost/hintgptnojson.php:20
+Stack trace:
+#0 /Users/pfrape/Sites/localhost/hintgptnojson.php(20): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), '/Users/pfrape/D...')
+#1 {main}
+  thrown in /Users/pfrape/Sites/localhost/hintgptnojson.php on line 20

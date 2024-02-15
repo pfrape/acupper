@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Hockey Scoring</title>
+</head>
+<body>
+    <div>
+        <label for="playerName">Player Name:</label>
+        <input type="text" id="playerName" />
+        <label for="scoringPeriod">Scoring Period:</label>
+        <input type="text" id="scoringPeriod" />
+        <button onclick="fetchPlayerData()">Fetch Player Data</button>
+        
+        <h2>Player Scoring Data:</h2>
+        <table border="1" id="playerTable">
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Scoring Period</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                    <th>Total Points</th>
+                </tr>
+            </thead>
+            <tbody id="playerData"></tbody>
+        </table>
+    </div>
+
+    <script>
+        function fetchPlayerData() {
+            // Get player name and scoring period from user input
+            const playerName = document.getElementById('playerName').value;
+            const scoringPeriod = document.getElementById('scoringPeriod').value;
+
+            // Prepare data as a JSON array
+            const requestData = {
+                playerName: playerName,
+                scoringPeriod: scoringPeriod
+            };
+
+            // Use JavaScript to fetch data from PHP with HTTP POST
+            fetch('getPlayerData.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Populate table with data
+                populateTable(data);
+            });
+        }
+
+        function populateTable(data) {
+            // Get the table body element
+            const tableBody = document.getElementById('playerData');
+
+            // Clear existing rows
+            tableBody.innerHTML = '';
+
+            // Populate the table with data
+            data.forEach(row => {
+                const totalPoints = parseInt(row.goals) + parseInt(row.assists);
+
+                // Create a new row
+                const newRow = tableBody.insertRow();
+                
+                // Insert cells with data
+                newRow.insertCell().textContent = row.player_name;
+                newRow.insertCell().textContent = row.scoring_period;
+                newRow.insertCell().textContent = row.goals;
+                newRow.insertCell().textContent = row.assists;
+                newRow.insertCell().textContent = totalPoints;
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Hockey Scoring</title>
+
+    <!-- ag-Grid styles -->
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/styles/ag-theme-alpine.css">
+</head>
+<body>
+    <div>
+        <label for="playerName">Player Name:</label>
+        <input type="text" id="playerName" onkeyup="fetchPlayerData()" />
+        <label for="scoringPeriod">Scoring Period:  </label>
+        <input type="text" id="scoringPeriod" onkeyup="fetchPlayerData()" />
+        <button onclick="fetchPlayerData()">Fetch Player Data</button>
+        
+        <h2>Player Scoring Data:</h2>
+        <div id="agGrid" style="height: 400px;" class="ag-theme-alpine"></div>
+    </div>
+
+    <!-- ag-Grid scripts -->
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-theme-alpine.min.noStyle.js"></script>
+
+    <script>
+        let gridOptions;  // Declare gridOptions outside the function
+
+        function onGridReady(params) {
+            // This function will be called when the grid is ready
+            gridOptions.api = params.api;
+        }
+
+        function fetchPlayerData() {
+            const playerName = document.getElementById('playerName').value;
+            const scoringPeriod = document.getElementById('scoringPeriod').value;
+
+            fetch('hintgptnojson.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `playerName=${playerName}&scoringPeriod=${scoringPeriod}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update row data in ag-Grid
+                gridOptions.api.setRowData(data);
+            });
+        }
+
+        // Create ag-Grid instance with empty rowData
+        gridOptions = {
+            columnDefs: [
+                { headerName: 'First Name', field: 'firstName', sortable: true },
+                { headerName: 'Last Name', field: 'lastName', sortable: true },
+                { headerName: 'Scoring Period', field: 'scoringPeriod', sortable: true },
+                { headerName: 'Goals', field: 'goals', sortable: true },
+                { headerName: 'Assists', field: 'assists', sortable: true },
+                { headerName: 'PIMs', field: 'pim', sortable: true },
+                { headerName: 'Total Points', field: 'totalPoints', sortable: true }
+            ],
+            rowData: [],
+            onGridReady: onGridReady  // Callback function for when the grid is ready
+        };
+
+        const gridDiv = document.getElementById('agGrid');
+        const agGrid = new agGrid.Grid(gridDiv, gridOptions);
+    </script>
+</body>
+</html>
